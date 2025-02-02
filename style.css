@@ -48,6 +48,7 @@ span {
      font-size: 16px;
      font-weight: 500;
      letter-spacing: 1px;
+     
 }
 .span_class {
      color: red;
@@ -56,5 +57,93 @@ span {
 .container {
      margin: 0 auto;
      width: 85%;
-     padding-top: 150px;
+}
+.container h1  {
+    padding: 190px 0 0 0;
+}
+
+
+/* header area css start here */
+.header_wrapper {
+     display: flex;
+     justify-content: space-between;
+     height: 80px;
+     align-items: center;
+}
+.header_area {
+     background-color: #f3f3f3;
+     height: 80px;
+     background-image: url(images/fffff1.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.menu ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     display: flex;
+}
+.menu li {
+     padding: 10px;
+     position: relative;
+}
+.menu ul li a {
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 400;
+     color: #ffffff;
+}
+button {
+     background: #0073aa; 
+     color: #fff; 
+     border: 1px solid #005177;
+     padding: 10px 12px;
+     text-decoration: none;
+     border-radius: 3px;
+     font-size: 14px;
+     font-weight: 600;
+     cursor: pointer;
+}
+button:hover {
+     background: #005177;
+     border-color: #003f5c;
+}
+.logo h2 {
+     font-size: 25px;
+     color: #fff;
+}
+
+
+
+/* dropdown menu css start here */
+.menu ul li ul {
+     display: block;
+     position: absolute;
+     z-index: 4;
+     background-color: #fff9f9;
+     width: 180px;
+     left: 0;
+     top: 100%;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.8s;
+     transform: translateY(40px);
+}
+.menu ul li:hover ul {
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+}
+
+.menu ul li ul li:hover {
+     background-color: #b7d5e3;
+}
+.menu ul li ul li  a{
+     color: #430808;
+     font-size: 16px;
+     font-weight: 400;
+}
+.menu ul li ul li {
+     border-bottom: 1px solid #0073aa;
 }
